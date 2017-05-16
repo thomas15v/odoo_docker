@@ -5,6 +5,8 @@ services:
     restart: always
     links:
       - db
+    ports:
+      - 80:8069
     volumes:
       - ./odoo.conf:/etc/odoo/odoo.conf
       - ./extra-addons:/mnt/extra-addons

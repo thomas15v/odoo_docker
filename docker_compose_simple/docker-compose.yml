@@ -3,6 +3,8 @@ services:
   odoo:
     image: odoo:10
     restart: always
+    ports:
+      - 80:8069    
     links:
       - db
     volumes:
